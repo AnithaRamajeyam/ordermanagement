@@ -1,0 +1,5 @@
+package com.toyota.springboot.repository;
+
+public interface SeriesRepository {
+
+}

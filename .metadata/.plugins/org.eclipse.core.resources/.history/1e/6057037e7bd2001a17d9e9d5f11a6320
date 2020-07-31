@@ -1,0 +1,5 @@
+package com.toyota.springboot.model;
+
+public class Accessory {
+
+}

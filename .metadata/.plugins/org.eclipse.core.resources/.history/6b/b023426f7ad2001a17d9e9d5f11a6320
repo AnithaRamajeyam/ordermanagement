@@ -1,0 +1,41 @@
+package com.toyota.springboot.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.toyota.springboot.model.OrderAccessory;
+import com.toyota.springboot.model.OrderColor;
+import com.toyota.springboot.model.Orders;
+import com.toyota.springboot.repository.OrderRepository;
+import java.util.*;
+@Service
+public class OrderServiceImpl implements OrderService {
+
+	@Autowired
+	OrderRepository orderRepository;
+
+	@Override
+	public Orders saveOrder(Orders order) {
+		// TODO Auto-generated method stub
+		//Orders orders=new Orders(order.getSeriesName(),order.getModelName(),order.getPrice());
+//		List<OrderAccessory> orderAccessoryList=new ArrayList<>(); 
+//		for(OrderAccessory orderAccessary:order.getOrderAccessory())
+//		{
+//			OrderAccessory orderAccessoryObject=new OrderAccessory(orderAccessary.getAccessoryName());
+//			orderAccessoryList.add(orderAccessoryObject);
+//			
+//		}
+//		orders.setOrderAccessory(orderAccessoryList);
+//		List<OrderColor> orderColorList=new ArrayList<>(); 
+//		for(OrderColor orderColor:order.getOrderColor())
+//		{
+//			OrderColor orderColorObject=new OrderColor(orderColor.getColorName(),orderColor.getQuantity());
+//			orderColorList.add(orderColorObject);
+//			
+//		}
+//		orders.setOrderColor(orderColorList);
+		return orderRepository.save(order);
+
+	}
+
+}

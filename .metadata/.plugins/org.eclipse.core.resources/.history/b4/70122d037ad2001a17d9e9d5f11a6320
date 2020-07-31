@@ -1,0 +1,5 @@
+package com.toyota.springboot.service;
+
+public class OrderServiceImpl {
+
+}
